@@ -38,4 +38,4 @@ result1 = naive_bayes.predict(classe1)
 classe2 = 'Flawless BE-3 restart and perfect booster landing. CC chutes deployed. @BlueOrigin'.split(' ')
 result2 = naive_bayes.predict(classe2)
 
-print(f'classe1 (Elon Musk): {result1}\n\nclasse2 (Jeff Bezos): {result2}')
+print(f'classe1 = {classe1}: \n result1 = {result1}\n\nclasse2 = {classe2}:\n result2 = {result2}')
