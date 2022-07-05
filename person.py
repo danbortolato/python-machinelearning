@@ -33,9 +33,13 @@ for x in lineList:
 
 naive_bayes.fit(Input, Output)
 
-classe1 = 'Motor Trend awards Tesla Model S best Car of the Year ever in their 70 year history!!'.split(' ')
-result1 = naive_bayes.predict(classe1)
-classe2 = 'Flawless BE-3 restart and perfect booster landing. CC chutes deployed. @BlueOrigin'.split(' ')
-result2 = naive_bayes.predict(classe2)
+class2 = 'Motor Trend awards Tesla Model S best Car of the Year ever in their 70 year history!!'.split(' ')
+result2 = naive_bayes.predict(class2)
+class1 = 'Flawless BE-3 restart and perfect booster landing. CC chutes deployed. @BlueOrigin'.split(' ')
+result1 = naive_bayes.predict(class1)
 
-print(f'classe1 = {classe1}: \n result1 = {result1}\n\nclasse2 = {classe2}:\n result2 = {result2}')
+# print(f'class1 = {class1}: \n result1 = {result1}\n\nclass2 = {class2}:\n result2 = {result2}')
+
+class3 = input('Write text from Jeff or Elon:\n').split(' ')
+result3 = naive_bayes.predict(class3)
+print(f'author = {result3}')
