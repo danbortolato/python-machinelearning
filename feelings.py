@@ -38,9 +38,13 @@ for x in lineList:
 
 naive_bayes.fit(Input, Output)
 
-classe1 = 'I am so happy to see you today'.split(' ')
-result1 = naive_bayes.predict(classe1)
-classe2 = 'I am not good today.'.split(' ')
-result2 = naive_bayes.predict(classe2)
+class1 = 'I am so happy to see you today'.split(' ')
+result1 = naive_bayes.predict(class1)
+class2 = 'I am not good today.'.split(' ')
+result2 = naive_bayes.predict(class2)
 
-print(f'classe1 (Happy): {result1}\n\nclasse2 (Sad): {result2}')
+#print(f'class1 (Happy): {result1}\n\nclass2 (Sad): {result2}')
+
+class3 = input('Tell me something about your day:\n').split(' ')
+result3 = naive_bayes.predict(class3) 
+print(f'Feeling = {result3}')
