@@ -1,4 +1,4 @@
-import bayes as nb
+import naivebayes as nb
 
 naive_bayes = nb.NaiveBayes()
 
